@@ -28,8 +28,9 @@ for build environments at the directory level.
 There is no need to call cabal or stack, or search through endless hackage or hoogle
 databases with the helper scripts installed. The ```com``` system itself is based on 
 Nixpkgs and nix-shell. This can be installed on any linux environment with the 
-```haskell_nix_build.sh``` file. This is a daemon that will insatll the nix-shell, nix-packages and access
-to the nix-store on your system at the root level. This will also modify your path to contain the root executable  
+```haskell_nix_build.sh``` file. This is a daemon that will install the nix-shell, nix-packages and access
+to the nix-store on your system at the root level (if you don't have a nix-shell already).  
+This will also modify your path to contain the root executable  
 ```nix-shell``` in the terminal.  
 
 Once in the com shell after executing ```sh com``` you have a shell built, specifically for building
