@@ -114,6 +114,7 @@ moduleToPackage modName = case modName of
             --File System
             "System.FilePath" -> "filepath"
             "System.Directory" -> "directory"
+            "System.Random" -> "random"
             --Networking
             "Network.HTTP" -> "HTTP"
             "Network.HTTP.Simple" -> "HTTP"

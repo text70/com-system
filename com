@@ -4,10 +4,8 @@ sudo nix-shell -p "ghc.withPackages(pkgs: with pkgs; [
 
 
 --text 
---lists
---your-package-here
-
-
+--random
+--your-package-name-here
 
 
 
