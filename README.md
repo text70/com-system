@@ -1,10 +1,10 @@
 # The COM System (v0.1)
-## An ephemeral ghc dev environment based on nix-pkgs as a replacement for cabal and stack 
+## An ephemeral GHC dev environment based on nix-pkgs as a replacement for cabal and stack 
 
   
 ### What it do:
   
-✦Provides a directory level environment ghc compiler and the required haskell packages for building and compiling the haskell language (.hs) files into easy-to-run static executeables, 
+✦Provides a directory level environment GHC compiler and the required haskell packages for building and compiling the haskell language (.hs) files into easy-to-run static executeables, 
 without the need to engage with cabal, stack, or ghcup (Yay!🎉🥳🎈)   
 ✦Provides a way to search for the nixpkgs equivalent of the hackage packages from any .hs file and modules listed.   
 ✦This system formalizes what developers have been
@@ -21,7 +21,7 @@ It is run simply with
   
 ### Helper scripts
   
-A helper script SearchPackages.hs is provided, and does not need to be compiled to run provided you have ghc version already. 
+A helper script SearchPackages.hs is provided, and does not need to be compiled to run provided you have a GHC version already. 
 ```runhaskell SeachPackages.hs <my-haskell-program.hs>```  
 
 This provides a reasonable list to modify the ```com``` file for haskell packages at build time, 
@@ -60,7 +60,7 @@ This will also modify your path to contain the root executable
 ```nix-shell``` in the terminal.  
 
 Once in the com shell after executing ```sh com``` you have a shell built, specifically for building
-your .hs files using ghc. No more .cabal, no more stack build, no more ghcup-tui.   
+your .hs files using GHC. No more .cabal, no more stack build, no more ghcup-tui.   
 Just build with ```ghc WhyDidntIThinkofThis.hs```.   
 
 
