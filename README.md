@@ -29,7 +29,7 @@ for build environments at the directory level.  See [The Build Environment]
 
 ## Running and compiling an executeable
 
-1.  Add your haskell package names to the ```com```file.  
+1.  Add your haskell package names to the ```com```file in the ```--Add your packages below and uncomment --``` section, and put the ```com``` file your directory that you want to compile from, usually the same directory as your .hs file.  
 
 2.   ```$ sh com```  to start the nix-shell
 
@@ -37,7 +37,9 @@ for build environments at the directory level.  See [The Build Environment]
 
 4.   ```[nix-shell~]# exit``` to escape the nix-shell  
 
-5.   ```$ ./MyFavoriteHaskellProgram```
+5.   run your program ```$ ./MyFavoriteHaskellProgram```
+
+If your program fails to compile at (3) you can check the error dependencies, modify your ```com``` file with the necessary hackage packages, and recompile, and test run without ever leaving the environment. After compilation, you should be able to run the program from most modern os systems with a binary read capacity.  If you want to pass custom flags to the ghc compiler like ```-O2, -threaded, or +RTS -N{#of cores} ``` go for it! It works just like all your other ghc builds except its waaay faster because you aren't spending precious (T&*$) on setting up your build envs. 
 
 ## Requirements
 
@@ -63,6 +65,7 @@ Once in the com shell after executing ```sh com``` you have a shell built, speci
 your .hs files using GHC. No more .cabal, no more stack build, no more ghcup-tui.   
 Just build with ```ghc WhyDidntIThinkofThis.hs```.   
 
+Each directory should have its own ```com``` file for building the .hs files into their executable versions. So, say you had 15 different (.hs) files in one directory that you needed to put into an executeable. Well you would use the helper script, add all the packages to the ```com```file, then ```sh com``` your way to victory, because you just saved so much time that you can now make that date, game, lifelong dream a real possibility now my friend. 
 
 ### Example
 If you already have GHC and nix-shell installed, you can try it out:  
