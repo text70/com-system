@@ -24,7 +24,17 @@ A helper script SearchPackages.hs is provided, and does not need to be compiled 
 
 This provides a reasonable list to modify the ```com``` file for haskell packages necessary, 
 for build environments at the directory level.  
+
+## Requirements
+
+✦A Linux/BSD/GNU/MacOS/(Maybe WSL) OS 
   
+✦Bourne shell   
+  
+✦~10GB(+/-3GB) space for nix-packages and the nix-store local cache   
+(nix-store is ephemeral and can be cleared with ```nix-store --gc```)
+
+
 ### The Build environment
 
 There is no need to call cabal or stack, or search through endless hackage or hoogle
