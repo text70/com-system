@@ -61,6 +61,14 @@ Once in the com shell after executing ```sh com``` you have a shell built, speci
 your .hs files using ghc. No more .cabal, no more stack build, no more ghcup-tui.   
 Just build with ```ghc WhyDidntIThinkofThis.hs```. 
 
+### Example
+If you already have GHC and nix-shell installed, you can try it out:
+```runhaskell SeachPackages.hs Cookies.hs```  
+Add results to the ```com``` file pkgs list  
+```$ sh com```  
+```~$ ghc Cookies.hs```  
+```~$ exit```  
+```$ ./Cookies```  
 
 #### Acknowledgements:
 
