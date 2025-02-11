@@ -59,16 +59,29 @@ This will also modify your path to contain the root executable
 
 Once in the com shell after executing ```sh com``` you have a shell built, specifically for building
 your .hs files using ghc. No more .cabal, no more stack build, no more ghcup-tui.   
-Just build with ```ghc WhyDidntIThinkofThis.hs```. 
+Just build with ```ghc WhyDidntIThinkofThis.hs```.   
+
 
 ### Example
-If you already have GHC and nix-shell installed, you can try it out:
+If you already have GHC and nix-shell installed, you can try it out:  
 ```runhaskell SeachPackages.hs Cookies.hs```  
 Add results to the ```com``` file pkgs list  
 ```$ sh com```  
 ```~$ ghc Cookies.hs```  
 ```~$ exit```  
-```$ ./Cookies```  
+```$ ./Cookies```    
+  
+
+>[!NOTE]   
+>The nix-packages channel provided by COM(v0.1) is the recommended channel nixpkgs-unstable.
+>Please be aware, that while the repository tries to keep the latest version of pkgs in the database,
+>it is a rolling release version of linux and some pkgs may cause packages with outdated dependencies from hackage to fail compilation. If this is the case,
+>please contact the package maintainers. 
+
+
+
+>[!TIP]
+>If you would also like to customize the GHC compiler version, there are several versions availible from the [nix-store](https://search.nixos.org/packages).
 
 #### Acknowledgements:
 
