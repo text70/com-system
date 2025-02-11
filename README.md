@@ -15,7 +15,7 @@ working with for a while in NixOS, and makes the system available to all linux f
 The ```com``` file is used to call the specific packages needed for each build.
 As of this version the ```com``` file simply provides a shell entry point to build 
 a directory level instance of ```ghc``` with the requried packages. It is run simply with 
-```sh com```
+```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package.
   
 ### Helper scripts
   
