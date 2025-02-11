@@ -86,7 +86,7 @@ Add results to the ```com``` file pkgs list
 
 
 >[!TIP]
->If you would also like to customize the GHC compiler version, there are several versions availible from the [nix-store](https://search.nixos.org/packages).
+>If you would also like to customize the GHC compiler version, there are several versions availible from the [nix-store](https://search.nixos.org/packages). Just modify the ```com``` file at ```"ghc_my_version.withPackages...```
 
 #### Acknowledgements:
 
