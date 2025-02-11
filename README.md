@@ -4,9 +4,10 @@
   
 ### What it do:
   
-Provides ghc and the required haskell packages for building and compiling the haskell language into static executeables, 
-without the need for cabal, stack, or ghcup. Provides a way to search for the nixpkgs equivalent hackage packages from any .hs file.   
-This system formalizes what developers have been
+✦Provides the ghc compiler and the required haskell packages for building and compiling the haskell language into easy to run static executeables, 
+without the need for cabal, stack, or ghcup.   
+✦Provides a way to search for the nixpkgs equivalent hackage packages from any .hs file.   
+✦This system formalizes what developers have been
 working with for a while in NixOS, and makes the system available to all linux flavors. (Maybe WSL).    
   
 ### The COM file
