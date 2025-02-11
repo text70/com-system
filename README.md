@@ -4,7 +4,7 @@
   
 ### What it do:
   
-✦Provides a directory level environment GHC compiler and the required haskell packages for building and compiling the haskell language (.hs) files into easy-to-run static executeables, 
+✦Provides a directory level environment GHC compiler and the required haskell packages for building and compiling the haskell language (.hs) files into easy-to-run static executables, 
 without the need to engage with cabal, stack, or ghcup (Yay!🎉🥳🎈)   
 ✦Provides a way to search for the nixpkgs equivalent of the hackage packages from any .hs file and modules listed.   
 ✦This system formalizes what developers have been
@@ -14,7 +14,7 @@ working with for a while in NixOS, and makes the system available to all linux f
   
 The ```com``` file is a directory level file, like Dockerifle or .yaml, used to call the specific packages needed for each build.
 As of this version the ```com``` file simply provides a shell entry point to build 
-a directory level instance of ```ghc``` with the requried packages. Future versions may have a more ordered installable executeable, 
+a directory level instance of ```ghc``` with the requried packages. Future versions may have a more ordered installable executable, 
 that can handle cli commands and passing lists to the package search function, but I am lazy, so this will do for version (v0.1).  
 It is run simply with 
 ```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package.
@@ -27,7 +27,7 @@ A helper script SearchPackages.hs is provided, and does not need to be compiled 
 This provides a reasonable list to modify the ```com``` file for haskell packages at build time, 
 for build environments at the directory level.  See [The Build Environment]
 
-## Running and compiling an executeable
+## Running and compiling an executable
 
 1.  Add your haskell package names to the ```com```file in the ```--Add your packages below and uncomment --``` section, and put the ```com``` file your directory that you want to compile from, usually the same directory as your .hs file.  
 
