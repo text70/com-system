@@ -8,7 +8,7 @@ import Control.Monad
 -- Define our highly sophisticated types
 newtype Wisdom = Wisdom String deriving Show
 newtype DadJoke = DadJoke String deriving Show
-data FortuneLevel = Meh | NotBad | Amazing | MindBlowing deriving (Show, Eq, Ord)
+data FortuneLevel = Meh | NotBad | Amazing | MindBlowing🤯 deriving (Show, Eq, Ord)
 
 -- The most complex way possible to combine two strings
 overEngineeredCombine :: String -> String -> String
@@ -56,7 +56,7 @@ calculateFortuneLevel fortune =
         0 -> Meh
         1 -> NotBad
         2 -> Amazing
-        _ -> MindBlowing 🤯
+        _ -> MindBlowing🤯
 
 -- The most elaborate way possible to pick a random element
 pickRandom :: [a] -> IO a
