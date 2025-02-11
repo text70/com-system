@@ -2,7 +2,7 @@
 ## An ephemeral ghc dev environment based on nix-pkgs as a replacement for cabal and stack 
 
   
-### What it does:
+### What it do:
   
 Provides ghc and the required haskell packages for building and compiling the haskell language into static executeables, 
 without the need for cabal, stack, or ghcup. This system formalizes what developers have been
