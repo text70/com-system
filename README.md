@@ -17,7 +17,7 @@ a directory level instance of ```ghc``` with the requried packages. It is run si
   
 ### Helper scripts
   
-A helper script SearchPackages.hs is provided, and does not need to be comiled to run.
+A helper script SearchPackages.hs is provided, and does not need to be compiled to run.
 ```runhaskell SeachPackages.hs <my-haskell-program.hs>```  
 
 This provides a reasonable list to modify the ```com``` file for haskell packages necessary, 
