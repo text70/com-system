@@ -1,4 +1,4 @@
--- The Most Over-Engineered Fortune Cookie Generator Ever
+-- The Most Over-Engineered Fortune Cookie 🥠 Generator Ever
 -- Warning: Contains dad jokes and unnecessary complexity
 
 import System.Random
@@ -56,7 +56,7 @@ calculateFortuneLevel fortune =
         0 -> Meh
         1 -> NotBad
         2 -> Amazing
-        _ -> MindBlowing
+        _ -> MindBlowing 🤯
 
 -- The most elaborate way possible to pick a random element
 pickRandom :: [a] -> IO a
