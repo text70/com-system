@@ -17,7 +17,7 @@ a directory level instance of ```ghc``` with the requried packages. It is run si
   
 ### Helper scripts
   
-A helper script SearchPackages.hs is provided, and does not need to be compiled to run.
+A helper script SearchPackages.hs is provided, and does not need to be compiled to run.  
 ```runhaskell SeachPackages.hs <my-haskell-program.hs>```  
 
 This provides a reasonable list to modify the ```com``` file for haskell packages necessary, 
@@ -29,7 +29,8 @@ There is no need to call cabal or stack, or search through endless hackage or ho
 databases with the helper scripts installed. The ```com``` system itself is based on 
 Nixpkgs and nix-shell. This can be installed on any linux environment with the 
 ```haskell_nix_build.sh``` file. This is a daemon that will insatll the nix-shell, nix-packages and access
-to the nix-store on your system at the root level. This will also modify your path to contain the root executable ```nix-shell``` in the terminal.  
+to the nix-store on your system at the root level. This will also modify your path to contain the root executable  
+```nix-shell``` in the terminal.  
 
 Once in the com shell after executing ```sh com``` you have a shell built, specifically for building
 your .hs files using ghc. No more .cabal, no more stack build, no more ghcup-tui.   
