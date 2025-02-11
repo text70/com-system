@@ -40,7 +40,7 @@ Just build with ```ghc WhyDidntIThinkofThis.hs```.
 
 Acknowledgements:
 
-For further reading on the Nixpkgs installer check out (https://itsfoss.com/ubuntu-install-nix-package-manager/)
-For Arch specific: https://wiki.archlinux.org/title/Nix
-For Debian: https://ariya.io/2020/05/nix-package-manager-on-ubuntu-or-debian
-For the determinate installer MacOS etc...: https://github.com/DeterminateSystems/nix-installer
+For further reading on the Nixpkgs installer check out (https://itsfoss.com/ubuntu-install-nix-package-manager/)  
+For Arch specific: https://wiki.archlinux.org/title/Nix  
+For Debian: https://ariya.io/2020/05/nix-package-manager-on-ubuntu-or-debian  
+For the determinate installer MacOS etc...: https://github.com/DeterminateSystems/nix-installer  
