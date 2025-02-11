@@ -1,4 +1,4 @@
-# The COM System (v1)
+# The COM System (v0.1)
 ## An ephemeral ghc dev environment based on nix-pkgs as a replacement for cabal and stack 
 
   
