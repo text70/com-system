@@ -1,13 +1,14 @@
-sudo nix-shell --packages 'ghc.withPackages (pkgs: [ 
+#Add your packages below and uncomment --
 
---Add your packages below and uncomment --
-
---networking 
---your-hackage-packages
+sudo nix-shell -p "ghc.withPackages(pkgs: with pkgs; [
 
 
+--text 
+--lists
+--your-package-here
 
 
 
 
-])'
+
+])"
