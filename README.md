@@ -36,3 +36,8 @@ This will also modify your path to contain the root executable
 Once in the com shell after executing ```sh com``` you have a shell built, specifically for building
 your .hs files using ghc. No more .cabal, no more stack build, no more ghcup-tui.   
 Just build with ```ghc WhyDidntIThinkofThis.hs```. 
+
+
+Acknowledgements:
+
+For further reading on the Nixpkgs installer check out (https://itsfoss.com/ubuntu-install-nix-package-manager/)
