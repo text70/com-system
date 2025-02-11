@@ -50,9 +50,10 @@ your .hs files using ghc. No more .cabal, no more stack build, no more ghcup-tui
 Just build with ```ghc WhyDidntIThinkofThis.hs```. 
 
 
-Acknowledgements:
+#### Acknowledgements:
 
 For further reading on the Nixpkgs installer check out [ItsFOSS](https://itsfoss.com/ubuntu-install-nix-package-manager/)  
 For Arch specific: https://wiki.archlinux.org/title/Nix  
 For Debian: https://ariya.io/2020/05/nix-package-manager-on-ubuntu-or-debian  
 For the determinate installer MacOS etc...: https://github.com/DeterminateSystems/nix-installer  
+More on clearing the NixStore: https://nixos.wiki/wiki/Cleaning_the_nix_store
