@@ -14,7 +14,7 @@ working with for a while in NixOS, and makes the system available to all linux f
   
 The ```com``` file is a directory level file, like Dockerifle or .yaml, used to call the specific packages needed for each build.
 As of this version the ```com``` file simply provides a shell entry point to build 
-a directory level instance of ```ghc``` with the requried packages. Future versions may have a more ordered installable executable, 
+a directory level instance of the most recent version of ```ghc``` with the requried packages. Future versions may have a more ordered installable executable, 
 that can handle cli commands and passing lists to the package search function, but I am lazy, so this will do for version (v0.1).  
 It is run simply with 
 ```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package. If it is not listed in ```SearchPackges.hs```, please modify pull and push and become a contributor as this is an active project. 
