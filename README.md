@@ -4,26 +4,38 @@
   
 ### What it do:
   
-✦Provides directory level ghc compiler and the required haskell packages for building and compiling the haskell language and .hs files into easy to run static executeables, 
-without the need for cabal, stack, or ghcup.   
+✦Provides a directory level environment ghc compiler and the required haskell packages for building and compiling the haskell language (.hs) files into easy-to-run static executeables, 
+without the need to engage with cabal, stack, or ghcup (Yay!🎉🥳🎈)   
 ✦Provides a way to search for the nixpkgs equivalent of the hackage packages from any .hs file and modules listed.   
 ✦This system formalizes what developers have been
 working with for a while in NixOS, and makes the system available to all linux flavors. (Maybe WSL).    
   
 ### The COM file
   
-The ```com``` file is used to call the specific packages needed for each build.
+The ```com``` file is a directory level file, like Dockerifle or .yaml, used to call the specific packages needed for each build.
 As of this version the ```com``` file simply provides a shell entry point to build 
 a directory level instance of ```ghc``` with the requried packages. It is run simply with 
 ```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package.
   
 ### Helper scripts
   
-A helper script SearchPackages.hs is provided, and does not need to be compiled to run.  
+A helper script SearchPackages.hs is provided, and does not need to be compiled to run provided you have ghc version already. 
 ```runhaskell SeachPackages.hs <my-haskell-program.hs>```  
 
-This provides a reasonable list to modify the ```com``` file for haskell packages necessary, 
-for build environments at the directory level.  
+This provides a reasonable list to modify the ```com``` file for haskell packages at build time, 
+for build environments at the directory level.  See [The Build Environment]
+
+## Running and compiling an executeable
+
+1.  Add your haskell package names to the ```com```file.  
+
+2.   ```$ sh com```  to start the nix-shell
+
+3.   ```[nix-shell~]# ghc MyFavioriteHaskellProgram.hs```
+
+4.   ```[nix-shell~]# exit``` to escape the nix-shell  
+
+5.   ```$ ./MyFavoriteHaskellProgram```
 
 ## Requirements
 
