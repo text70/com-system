@@ -4,9 +4,9 @@
   
 ### What it do:
   
-✦Provides the ghc compiler and the required haskell packages for building and compiling the haskell language into easy to run static executeables, 
+✦Provides directory level ghc compiler and the required haskell packages for building and compiling the haskell language and .hs files into easy to run static executeables, 
 without the need for cabal, stack, or ghcup.   
-✦Provides a way to search for the nixpkgs equivalent hackage packages from any .hs file.   
+✦Provides a way to search for the nixpkgs equivalent of the hackage packages from any .hs file and modules listed.   
 ✦This system formalizes what developers have been
 working with for a while in NixOS, and makes the system available to all linux flavors. (Maybe WSL).    
   
