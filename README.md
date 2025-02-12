@@ -39,13 +39,13 @@ for build environments at the directory level.  See [The Build Environment]
 
 5.   run your program ```$ ./MyFavoriteHaskellProgram```
 
-If your program fails to compile at (3) you can check the error dependencies, modify your ```com``` file with the necessary hackage packages, and recompile, and test run without ever leaving the environment. After compilation, you should be able to run the program from most modern os systems with a binary read capacity.  If you want to pass custom flags to the ghc compiler like ```-O2, -threaded, or +RTS -N{#of cores} ``` go for it! It works just like all your other ghc builds except its waaay faster because you aren't spending precious (T&*$) on setting up your build envs. 
+If your program fails to compile at (3) you can check the error dependencies, modify your ```com``` file with the necessary hackage packages, and recompile, and test run without ever leaving the environment as you can call ```sh com``` inside of ```sh com```to host a new shell. After compilation, you should be able to run the program from most modern os systems with a binary read capacity.  If you want to pass custom flags to the ghc compiler like ```-O2, -threaded, or +RTS -N{#of cores} ``` go for it! It works just like all your other ghc builds except its waaay faster because you aren't spending precious (T&*$) on setting up your build envs. 
 
 ## Requirements
 
-✦A Linux/BSD/GNU/MacOS/(Maybe WSL) OS 
+✦Your favorite Linux/BSD/GNU/MacOS/(Maybe WSL) OS 
   
-✦Bourne shell   
+✦Bourne shell (if you use zsh just add some Zzz<sub>zz</sub>)   
   
 ✦~10GB(+/-3GB) space for nix-packages and the nix-store local cache   
 (nix-store is ephemeral and can be cleared with ```nix-store --gc```)
