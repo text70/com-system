@@ -5,8 +5,10 @@
 ### What it do:
   
 ✦Provides a comfy directory level dev environment for the GHC compiler and the required haskell packages for *your* project in *your* native OS. It is used for building and compiling haskell language (.hs) files into easy-to-run static executables, 
-without the need to engage with cabal, stack, ghcup, flakes, hix, or shell.nix (Yay!🎉🥳🎈)   
-✦Provides a way to search for the nixpkgs equivalent of the hackage packages from any .hs file and modules listed.   
+without the need to engage with ```cabal, stack, ghcup, flakes, hix``` or ```shell.nix``` (Yay!🎉🥳🎈)      
+
+✦Provides a way to search for the nixpkgs equivalent of the hackage packages from any .hs file and modules listed.    
+
 ✦This system formalizes what developers have been
 working with for a while in NixOS, and makes the system available to all linux flavors. (Maybe WSL too).    
   
@@ -17,7 +19,7 @@ As of this version the ```com``` file simply provides a shell entry point to bui
 a directory level instance of the most recent version of ```ghc``` with the requried packages. Future versions may have a more ordered installable executable, 
 that can handle cli commands and passing lists to the package search function, but I am lazy, so this will do for version (v0.1).  
 It is run simply with 
-```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package to build your project with, free from the worry of env variables or paths or modules package dependencies. If it is not listed in ```SearchPackges.hs```, please modify pull and push and become a contributor as this is an active project and needs *your* help to make it the bestest ever for goodness sake. 
+```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package to build your project with, free from the worry of env variables or paths or modules package dependencies. If it is not listed in ```SearchPackges.hs```, please clone, modify,  pull and push to become a contributor, as this is an active project and needs $${\color{red}your}$$ help to make it the bestest ever for goodness sake. 
   
 ### Helper scripts
   
@@ -48,7 +50,9 @@ If your program fails to compile at (3) you can check the error dependencies, mo
 ✦Bourne shell (if you use zsh just add some Zzz<sub>zz</sub>)   
   
 ✦~10GB(+/-3GB) space for nix-packages and the nix-store local cache   
-(nix-store is ephemeral and can be cleared with ```nix-store --gc```)
+(nix-store is ephemeral and can be cleaned with ```nix-store --gc```
+to remove unused packages, or if you just need a little extra room or are feeling sassy you can just
+```rm -rf ~/.cache/nix/```, because that's just like...whatever😎)
 
 
 ### The Build environment
