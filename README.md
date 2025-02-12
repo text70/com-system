@@ -63,7 +63,7 @@ Nixpkgs and nix-shell. This can be installed on any linux environment with the
 ```haskell_nix_build.sh``` file. This is a daemon that will install the nix-shell, nix-packages and access
 to the nix-store on your system at the root level (if you don't have a nix-shell already).  
 This will also modify your path to contain the root executable  
-```nix-shell``` in the terminal.  
+```nix-shell``` in the terminal. If you prefer to install ```nix-shell``` with your own package managers, see [Acknowledgements] for some helpful links. 
 
 Once in the com shell after executing ```sh com``` you have a shell built, specifically for building
 your .hs files using GHC. No more .cabal, no more stack build, no more ghcup-tui.   
