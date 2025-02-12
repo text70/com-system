@@ -72,7 +72,9 @@ Just build with ```ghc WhyDidntIThinkofThis.hs```.
 Each directory should have its own ```com``` file for building the .hs files into their executable versions. So, say you had 15 different (.hs) files in one directory that you needed to put into an executable. Well you would use the helper script, add all the packages to the ```com```file, then ```sh com``` your way to victory, because you just saved so much time that you can now make that date, game, lifelong dream a real possibility now my friend. 
 
 ## Example
-If you already have GHC and nix-shell installed, you can try it out:  
+If you already have GHC and nix-shell installed, you can clone the repo and try it out:  
+If not, run ```./haskell_nix_build.sh``` and then give it a go:  
+
 ```runhaskell SeachPackages.hs Cookies.hs```  
 Add results to the ```com``` file pkgs list  
 ```$ sh com```  
