@@ -17,7 +17,7 @@ As of this version the ```com``` file simply provides a shell entry point to bui
 a directory level instance of the most recent version of ```ghc``` with the requried packages. Future versions may have a more ordered installable executable, 
 that can handle cli commands and passing lists to the package search function, but I am lazy, so this will do for version (v0.1).  
 It is run simply with 
-```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package. If it is not listed in ```SearchPackges.hs```, please modify pull and push and become a contributor as this is an active project. 
+```sh com``` and can be modified with the results from ```SearchPackages.hs``` or any named hackage package to build your project with, free from the worry of env variables or paths or modules package dependencies. If it is not listed in ```SearchPackges.hs```, please modify pull and push and become a contributor as this is an active project and needs *your* help to make it the bestest ever for goodness sake. 
   
 ### Helper scripts
   
