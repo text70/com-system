@@ -5,7 +5,7 @@
 ## What it do:
   
 ✦Provides a comfy directory level dev environment for the GHC compiler and the required haskell packages for *your* project in *your* native OS. It is used for building and compiling haskell language (.hs) files into easy-to-run static executables, 
-without the need to engage with ```cabal, stack, ghcup, flakes, hix``` or ```shell.nix``` (Yay!🎉🥳🎈)      
+without the need to engage with ```cabal, stack, ghcup, flakes, hix``` or ```shell.nix``` (Yay!🎉🥳🎈¡λɐλ)    
 
 ✦Provides a way to search for the nixpkgs equivalent of the hackage packages from any .hs file and modules listed.    
 
